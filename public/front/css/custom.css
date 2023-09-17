@@ -1,0 +1,109 @@
+.home-story .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.home-story .slick-dots li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #f74d6c;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.home-story .slick-dots li button {
+    display: none;
+}
+
+.home-story .slick-dots li.slick-active {
+    background-color: #f74d6c;
+}
+
+.home-contact .text .direct-contact li a i {
+    padding-right: 8px;
+}
+
+.page-banner {
+    position: relative;
+    padding: 60px 0;
+    background-position: 0 100;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  
+  .page-banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .page-banner h2 {
+    font-size: 62px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  @media (max-width: 991.98px) {
+    .page-banner h2 {
+      font-size: 48px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .page-banner h2 {
+      font-size: 34px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .page-banner h2 {
+      font-size: 28px;
+    }
+  }
+  
+  .pagination {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .pagination .page-item {
+    margin: 0 5px;
+  }
+  .pagination .page-item.active span {
+    background-color: #00A896;
+    border-color: #00A896;
+  }
+  .pagination .page-link {
+    color: #066F75;
+  }
+  .pagination .page-link i {
+    font-size: 12px;
+  }
+  .pagination .page-link:hover {
+    color: #ffffff;
+    background-color: #00A896;
+    border-color: transparent;
+  }
+
+  .all-blog-btn  {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #00A896;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .all-blog-btn:hover  {
+    background-color: #f74d6c;
+    color: #fff;
+  }

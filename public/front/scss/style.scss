@@ -1,0 +1,35 @@
+/*
+------------- Table of content ----------------
+
+Template Name: 
+Template URI: 
+Description: 
+Author: Nasrullah Mansur
+Author URI: http://divinecoder.com
+Version: 1.0
+
+---------------------- common content ----------
+#.body reset content
+#.header area
+#.footer
+#.hero-banner-area
+#.button
+
+*/
+
+ 
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/footer/footer";
+
+// Pages;
+@import "pages/index/index";

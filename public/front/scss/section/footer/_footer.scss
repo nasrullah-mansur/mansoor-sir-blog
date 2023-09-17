@@ -1,0 +1,88 @@
+.home-footer {
+    padding: 40px 0 0;
+    background-color: $primary-color;
+    margin-top: 80px;
+
+    @media (max-width: 991.98px) {
+        [class^="col"] {
+            margin-bottom: 30px;
+        }
+    }
+
+    .twitter-timeline {
+        height: 220px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 10px;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+
+        &::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        color: $white;
+        font-weight: 600;
+        padding-bottom: 10px;
+
+        &.flow {
+            font-size: 24px;
+        }
+    }
+
+    .footer-social {
+        display: flex;
+        margin-top: 30px;
+
+        li {
+            margin-right: 10px;
+
+            a {
+                display: flex;
+                width: 35px;
+                height: 35px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 1px solid $white;
+                color: $white;
+                font-size: 12px;
+
+                &:hover {
+                    background-color: $white;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .footer-link {
+        li {
+            margin-bottom: 5px;
+
+            a {
+                color: $white;
+                display: inline-block;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        background-color: $primary-color-d;
+        padding: 15px 0;
+        margin-top: 30px;
+
+        p {
+            color: $white;
+            margin-bottom: 0;
+        }
+    }
+}

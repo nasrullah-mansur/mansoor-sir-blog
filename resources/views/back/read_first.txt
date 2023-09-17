@@ -1,0 +1,4 @@
+
+=============== Change folder name ================
+blog_upcoming is main course blog;
+blog_category_upcoming is main course blog category;

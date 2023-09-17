@@ -1,0 +1,56 @@
+.swal-text {
+    text-align: center;
+}
+
+.image-preview.hide {
+    display: none;
+}
+
+.nice-select {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.nice-select .list {
+    display: block;
+    width: 100%;
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.dd-list .dd-list {
+    padding-left: 0 !important;
+}
+
+/* Custom Tag Output */
+.custom-tag-output {
+    width: 100%;
+    border: 1px solid #ccd6e6;
+    min-height: 40px;
+    padding: 5px 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-tag-output small {
+    padding: 5px 8px;
+    background-color: #00B5B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.custom-tag-output small i {
+    padding: 4px;
+    margin-left: 2px;
+    cursor: pointer;
+}

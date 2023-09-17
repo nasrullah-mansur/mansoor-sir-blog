@@ -1,0 +1,189 @@
+.home-header {
+
+    .top {
+        background-color: $primary-color;
+        padding: 10px 0;
+        border-bottom: 5px solid $primary-color-d;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                margin: 0 8px;
+
+                a {
+                    display: inline-block;
+                    color: $white;
+
+                    @media (max-width: 575px) {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+
+                    svg {
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-menu {
+        padding: 25px 30px;
+        box-shadow: 0 5px 15px #eee;
+
+        @media (max-width: 1199.98px) {
+            padding: 25px 15px;
+        }
+
+        @media (max-width: 1199.98px) {
+            padding: 15px 0;
+        }
+
+        .menu-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .logo {
+                order: 1;
+
+                img {
+                    max-width: 250px;
+
+                    @media (max-width: 767.98px) {
+                        max-width: 160px;
+                    }
+                }
+            }
+
+            .list {
+                margin-left: auto;
+                order: 2;
+
+                @media (max-width: 991.98px) {
+                    display: none;
+                }
+
+                @media (max-width: 1199.98px) {
+                    order: 5;
+                    width: 100%;
+                    margin-top: 25px;
+                    justify-content: center;
+                    
+                    ul {
+                        justify-content: flex-end;
+
+                        @media (max-width: 991.98px) {
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            li {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+                
+
+                ul {
+                    display: flex;
+
+                    li {
+                        a {
+                            display: block;
+                            font-family: $titleFont;
+                            font-weight: 600;
+                            color: $primary-color-d;
+                            margin-left: 10px;
+                            text-transform: uppercase;
+
+                            &:hover {
+                                color: $hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .account {
+                margin-left: 30px;
+                order: 3;
+
+                @media (max-width: 1199.98px) {
+                    margin-left: auto;
+                }
+
+                ul {
+                    display: flex;
+
+                    li {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            height: 40px;
+                            border-radius: 5px;
+                            margin-left: 10px;
+                            font-family: $titleFont;
+                            font-weight: 500;
+                            color: $white;
+
+                            &.login {
+                                // background-color: $hover-color;
+                                background: linear-gradient(#fe8065, #f74d6c);
+                                padding: 0 25px;
+                            }
+
+                            &.appointment {
+                                padding: 0 10px 0 20px;
+                                background-color: $primary-color;
+
+                                @media (max-width: 767.98px) {
+                                    display: none;
+                                }
+
+                                .icon {
+                                    width: 30px;
+                                    height: 30px;
+                                    background-color: $white;
+                                    border-radius: 5px;
+                                    color: #565ACF;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Mobile;
+    .mobile {
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+        color: $white;
+        border-radius: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+        display: none;
+        order: 3;
+
+        @media (max-width: 991.98px) {
+            display: flex;
+        }
+    }
+}
