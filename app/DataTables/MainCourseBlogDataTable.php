@@ -30,7 +30,7 @@ class MainCourseBlogDataTable extends DataTable
             })
 
             ->editColumn('title', function ($data) {
-                return '<a target="_blank" href="' . route('single.up.blog', $data->slug) . '"> ' . $data->title . '</a>';
+                return '<a target="_blank" href="' . route('main.course.single.blog', [$data->course->slug, $data->slug]) . '"> ' . $data->title . '</a>';
             })
 
             ->editColumn('updated_at', function ($data) {

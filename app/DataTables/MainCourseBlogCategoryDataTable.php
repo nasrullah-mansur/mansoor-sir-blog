@@ -29,10 +29,7 @@ class MainCourseBlogCategoryDataTable extends DataTable
                 return $data->created_at->diffForHumans(); // human readable format
             })
 
-            ->editColumn('slug', function ($data) {
-                // return '<a target="_blank" href="' . route('main.course.blog.category.by', $data->slug) . '"> ' . route('up.blog.by.category', $data->slug) . '</a>';
-                return 'ok';
-            })
+            
 
             ->editColumn('updated_at', function ($data) {
                 return $data->updated_at->diffForHumans(); // human readable format
@@ -95,7 +92,6 @@ class MainCourseBlogCategoryDataTable extends DataTable
             Column::make('SL')->orderable(false)->searchable(false),
             // Column::make('image'),
             Column::make('title'),
-            Column::make('slug'),
             Column::make('created_at'),
             Column::make('updated_at'),
             Column::computed('action')

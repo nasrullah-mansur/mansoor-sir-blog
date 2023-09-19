@@ -121,4 +121,44 @@ class MainCourseController extends Controller
             'categories'
         ));
     }
+
+
+    function front_single_blog($course_slug, $blog_slug) {
+        $blog = MainCourseBlog::where('slug', $blog_slug)->firstOrFail();
+        $course = MainCourse::where('slug', $course_slug)->firstOrFail();
+        $categories = MainCourseBlogCategory::with(['blogs' => function($query) use ($course) {
+            $query->where('main_course_id', $course->id);
+        }])->get();
+        $courses = MainCourse::all();
+
+        $comments = [];
+
+
+        $previous_id = MainCourseBlog::where('id', '<', $blog->id)
+        ->where('main_course_id', $course->id)
+        ->max('id');
+        $next_id = MainCourseBlog::where('id', '>', $blog->id)
+        ->where('main_course_id', $course->id)
+        ->min('id');
+
+        $previous_blog = MainCourseBlog::where('id', $previous_id)->first(['title', 'slug']);
+        $next_blog = MainCourseBlog::where('id', $next_id)->first(['title', 'slug']);
+
+        $other_blogs = MainCourseBlog::where('slug', '!=', $blog_slug)
+        ->where('main_course_id', $course->id)
+        ->inRandomOrder()
+        ->take(3)->get();
+
+        return view('front.main_course.single', compact(
+            'blog', 
+            'course', 
+            'categories', 
+            'previous_blog', 
+            'next_blog', 
+            'other_blogs',
+            'comments',
+            'courses'
+        ));
+
+    }
 }

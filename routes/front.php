@@ -61,4 +61,5 @@ Route::get('our/courses', [MainCourseController::class, 'front_courses'])->name(
 
 // Main Course Blog;
 Route::get('blogs/{course}/{category}', [MainCourseController::class, 'front_main_course_blog_by_category'])->name('front.main.course.blog.by.category');
+Route::get('/course/{course_slug}/blogs/{blog_slug}', [MainCourseController::class, 'front_single_blog'])->name('main.course.single.blog');
 

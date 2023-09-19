@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::R73p1RUDitmgkz9v',
+            '_route' => 'generated::KN8z5U0dsII8b6qb',
           ),
           1 => NULL,
           2 => 
@@ -373,7 +373,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::QvjEHPy5z2AVNXok',
+            '_route' => 'generated::Rglu2H7QYWJnCUNk',
           ),
           1 => NULL,
           2 => 
@@ -409,7 +409,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::1tj1kPeFjQKpUtCd',
+            '_route' => 'generated::xN2gbyWc3XhczlCv',
           ),
           1 => NULL,
           2 => 
@@ -2357,7 +2357,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/admin/(?|u(?|sers/(?|edit/([^/]++)(*:42)|update/([^/]++)(*:64))|p\\-blog/(?|category/(?|edit/([^/]++)(*:108)|update/([^/]++)(*:131))|edit/([^/]++)(*:153)|update/([^/]++)(*:176)))|ad(?|min/(?|edit/([^/]++)(*:211)|update/([^/]++)(*:234))|vertizement/image/(?|edit/([^/]++)(*:277)|update/([^/]++)(*:300)))|blog/(?|category/(?|edit/([^/]++)(*:343)|update/([^/]++)(*:366))|tag/(?|edit/([^/]++)(*:395)|update/([^/]++)(*:418))|edit/([^/]++)(*:440)|update/([^/]++)(*:463))|c(?|o(?|mment/(?|status/([^/]++)(*:504)|upcoming/status/([^/]++)(*:536)|custom/status/([^/]++)(*:566))|ntact/(?|([^/]++)(*:592)|delete(*:606)|reply(*:619))|urse/(?|edit/([^/]++)(*:649)|update/([^/]++)(*:672)))|ustom\\-pages/(?|edit/([^/]++)(*:711)|update/([^/]++)(*:734)))|m(?|enu/(?|update/([^/]++)(*:770)|([^/]++)(*:786)|item/store/([^/]++)(*:813))|ain\\-course/blog/(?|edit/([^/]++)(*:855)|update/([^/]++)(*:878)))|gallery/video/(?|category/(?|edit/([^/]++)(*:930)|update/([^/]++)(*:953))|edit/([^/]++)(*:975)|update/([^/]++)(*:998))|s(?|pecialties/image/(?|edit/([^/]++)(*:1044)|update/([^/]++)(*:1068))|ocial/(?|edit/([^/]++)(*:1100)|update/([^/]++)(*:1124)))|pro\\-course/blog/category/(?|edit/([^/]++)(*:1177)|update/([^/]++)(*:1201))|our\\-courses/(?|edit/([^/]++)(*:1240)|update/([^/]++)(*:1264)))|/reset\\-password/([^/]++)(*:1300)|/blog(?|/(?|([^/]++)(*:1329)|by/search/([^/]++)(*:1356))|s/(?|category/([^/]++)(*:1388)|tag/([^/]++)(*:1409)|([^/]++)/([^/]++)(*:1435)))|/upcoming\\-blog(?|/([^/]++)(*:1473)|s/category/([^/]++)(*:1501))|/c(?|hambers/find/([^/]++)/([^/]++)(*:1546)|ourses/([^/]++)(*:1570))|/gallery/video/category/([^/]++)(*:1612)|/pages/([^/]++)(*:1636))/?$}sDu',
+      0 => '{^(?|/admin/(?|u(?|sers/(?|edit/([^/]++)(*:42)|update/([^/]++)(*:64))|p\\-blog/(?|category/(?|edit/([^/]++)(*:108)|update/([^/]++)(*:131))|edit/([^/]++)(*:153)|update/([^/]++)(*:176)))|ad(?|min/(?|edit/([^/]++)(*:211)|update/([^/]++)(*:234))|vertizement/image/(?|edit/([^/]++)(*:277)|update/([^/]++)(*:300)))|blog/(?|category/(?|edit/([^/]++)(*:343)|update/([^/]++)(*:366))|tag/(?|edit/([^/]++)(*:395)|update/([^/]++)(*:418))|edit/([^/]++)(*:440)|update/([^/]++)(*:463))|c(?|o(?|mment/(?|status/([^/]++)(*:504)|upcoming/status/([^/]++)(*:536)|custom/status/([^/]++)(*:566))|ntact/(?|([^/]++)(*:592)|delete(*:606)|reply(*:619))|urse/(?|edit/([^/]++)(*:649)|update/([^/]++)(*:672)))|ustom\\-pages/(?|edit/([^/]++)(*:711)|update/([^/]++)(*:734)))|m(?|enu/(?|update/([^/]++)(*:770)|([^/]++)(*:786)|item/store/([^/]++)(*:813))|ain\\-course/blog/(?|edit/([^/]++)(*:855)|update/([^/]++)(*:878)))|gallery/video/(?|category/(?|edit/([^/]++)(*:930)|update/([^/]++)(*:953))|edit/([^/]++)(*:975)|update/([^/]++)(*:998))|s(?|pecialties/image/(?|edit/([^/]++)(*:1044)|update/([^/]++)(*:1068))|ocial/(?|edit/([^/]++)(*:1100)|update/([^/]++)(*:1124)))|pro\\-course/blog/category/(?|edit/([^/]++)(*:1177)|update/([^/]++)(*:1201))|our\\-courses/(?|edit/([^/]++)(*:1240)|update/([^/]++)(*:1264)))|/reset\\-password/([^/]++)(*:1300)|/blog(?|/(?|([^/]++)(*:1329)|by/search/([^/]++)(*:1356))|s/(?|category/([^/]++)(*:1388)|tag/([^/]++)(*:1409)|([^/]++)/([^/]++)(*:1435)))|/upcoming\\-blog(?|/([^/]++)(*:1473)|s/category/([^/]++)(*:1501))|/c(?|hambers/find/([^/]++)/([^/]++)(*:1546)|ourse(?|s/([^/]++)(*:1573)|/([^/]++)/blogs/([^/]++)(*:1606)))|/gallery/video/category/([^/]++)(*:1649)|/pages/([^/]++)(*:1673))/?$}sDu',
     ),
     3 => 
     array (
@@ -3536,7 +3536,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1570 => 
+      1573 => 
       array (
         0 => 
         array (
@@ -3559,7 +3559,31 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1612 => 
+      1606 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'main.course.single.blog',
+          ),
+          1 => 
+          array (
+            0 => 'course_slug',
+            1 => 'blog_slug',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1649 => 
       array (
         0 => 
         array (
@@ -3582,7 +3606,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1636 => 
+      1673 => 
       array (
         0 => 
         array (
@@ -3766,7 +3790,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::R73p1RUDitmgkz9v' => 
+    'generated::KN8z5U0dsII8b6qb' => 
     array (
       'methods' => 
       array (
@@ -3789,7 +3813,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::R73p1RUDitmgkz9v',
+        'as' => 'generated::KN8z5U0dsII8b6qb',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4442,7 +4466,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::QvjEHPy5z2AVNXok' => 
+    'generated::Rglu2H7QYWJnCUNk' => 
     array (
       'methods' => 
       array (
@@ -4463,7 +4487,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::QvjEHPy5z2AVNXok',
+        'as' => 'generated::Rglu2H7QYWJnCUNk',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4518,7 +4542,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::1tj1kPeFjQKpUtCd' => 
+    'generated::xN2gbyWc3XhczlCv' => 
     array (
       'methods' => 
       array (
@@ -4539,7 +4563,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::1tj1kPeFjQKpUtCd',
+        'as' => 'generated::xN2gbyWc3XhczlCv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5608,6 +5632,43 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'front.main.course.blog.by.category',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'main.course.single.blog' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'course/{course_slug}/blogs/{blog_slug}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\MainCourseController@front_single_blog',
+        'controller' => 'App\\Http\\Controllers\\MainCourseController@front_single_blog',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'main.course.single.blog',
       ),
       'fallback' => false,
       'defaults' => 

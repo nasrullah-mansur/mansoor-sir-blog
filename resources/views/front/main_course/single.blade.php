@@ -1,66 +1,114 @@
-@extends('front.leyout.layout', [$title = 'Our Blogs'])
+@extends('front.leyout.layout', [$title = $blog->title])
 
 @push('page_css')
     <link rel="stylesheet" href="{{asset('front/css/pages/blog.css')}}">
 @endpush
 
+@push('custom_page_css')
+@if ($blog->custom_css)
+    <style>
+        {!! $blog->custom_css !!}
+    </style>
+    @endif
+@endpush
+
+
+
+
 @section('content')
 <!-- Page banner start -->
 <div class="page-banner" style="background-image: url({{ asset($course->image) }});">
-    <div class="container">
-        <h2>{{ $course->title }}</h2>
-    </div>
+  <div class="container">
+      <h2>{{ $blog->title }}</h2>
+  </div>
 </div>
 <!-- Page banner end -->
-
-<!-- Blog section start -->
-<section class="blog-page">
+   <!-- Blog section start -->
+   <section class="blog-page">
     <div class="container">
         <div class="row">
             <div class="col-lg-9">
-                <div class="blog-content">
+                <div class="single-blog">
+                    <div class="single-blog-title">
+                        <h2>{{ $blog->title }}</h2>
+                        {{$blog->category->title}}
+                        
+                      <span class="time">
+                          <i class="far fa-calendar"></i>
+                          {{$blog->created_at->format('d M Y')}}
+                      </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="single-blog">
                     
-                    <div class="row">
-                        @forelse ($blogs as $blog)
-                        <div class="col-lg-4">
+                    <img class="w-100 img-fluid" src="{{ asset($blog->image) }}" alt="{{$blog->title}}">
+                    <div class="description">
+                        <p>{{$blog->content}}</p>
+                    </div>
+
+                    <div class="details">
+                        {!! $blog->details !!}
+                    </div>
+
+                    <div class="next-prev">
+                        <ul>
+                          @if ($previous_blog)
+                          <li>
+                              <a href="{{ route('main.course.single.blog', [$course->slug, $previous_blog->slug]) }}">
+                                  <span>Previous blog</span>
+                                  <p>{{ $previous_blog->title }}</p>
+                              </a>
+                          </li>
+                          @endif
+                          @if ($next_blog)
+                          <li class="text-lg-end">
+                              <a href="{{ route('main.course.single.blog', [$course->slug, $next_blog->slug]) }}">
+                                  <span>Next blog</span>
+                                  <p>{{ $next_blog->title }}</p>
+                              </a>
+                          </li>
+                          @endif
+                        </ul>
+                    </div>
+
+                    <div class="also-like">
+                        <h3>You may also like</h3>
+                        <div class="row">
+                          @foreach ($other_blogs as $like)
+                          <div class="col-lg-4">
                             <div class="blog-item">
                                 <div class="img">
-                                    <a href="{{ route('main.course.single.blog', [$course->slug, $blog->slug]) }}"><img class="img-fluid w-100" src="{{ asset($blog->image)}}" alt="{{$blog->title}}" /></a>
+                                    <a href="{{ route('main.course.single.blog', [$course->slug, $like->slug]) }}">
+                                        <img class="img-fluid w-100" src="{{ asset($like->image) }}" alt="{{$like->title}}" />
+                                    </a>
                                 </div>
                                 <div class="blog-text">
-                                    <div class="blog-item-title">
-                                        <a href="{{route('front.main.course.blog.by.category', [$course->slug, $blog->category->slug])}}" class="category">
-                                            {{$blog->category->title}}
-                                        </a>
-                                        <span class="time">
-                                            <i class="far fa-calendar"></i>
-                                            {{$blog->created_at->format('d M Y')}}
-                                        </span>
-                                    </div>
-
                                     <div class="blog-content">
-                                        <h3>
-                                            <a href="{{ route('main.course.single.blog', [$course->slug, $blog->slug]) }}">{{$blog->title}}</a>
+                                        <h3 class="mb-0">
+                                            <a href="{{ route('main.course.single.blog', [$course->slug, $like->slug]) }}">{{ $like->title }}</a>
                                         </h3>
-                                        <p>
-                                            {{ $blog->content }}
-                                        </p>
-                                    </div>
-                                    <div class="read-more">
-                                        <a href="{{ route('main.course.single.blog', [$course->slug, $blog->slug]) }}">Read More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        @empty
-                        <p class="no-blog"><i class="far fa-frown-open"></i> No blog found <i class="far fa-frown-open"></i></p>
-                        @endforelse
+                        
+                          @endforeach
+                        </div>
                     </div>
+                    
+
+                    @include('front.components.comment', ['comments' => $comments, 'route' => route('comment.upcoming.store')])
+
+
                 </div>
-                <div class="paginate-area">
-                    {{ $blogs->onEachSide(3)->links() }}
-                </div>
+
             </div>
+
+            <!-- Sidebar -->
             <div class="col-lg-3">
                 <div class="right-sidebar">
                     
@@ -134,5 +182,4 @@
     </div>
 </section>
 <!-- Blog section end -->
-
 @endsection
